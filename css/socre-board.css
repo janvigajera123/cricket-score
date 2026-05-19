@@ -1,0 +1,154 @@
+/* Universal CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    
+}
+
+.score-board {
+    padding: 60px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.score-board-content {
+    /* background: radial-gradient(circle,
+            rgba(238, 174, 202, 1) 0%,
+            rgba(148, 187, 233, 1) 100%); */
+            /* background-image: url(/image/coolbackgrounds-topography-micron.svg);        */
+            background-image: url(/image/coolbackgrounds-fractalize-bleach.png);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+    transition: 0.3s;
+}
+
+
+.score-board-content h3 {
+    font-size: 32px;
+    font-weight: 500;
+    color: #000000; 
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.score {
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.overs {
+    text-align: center;
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* important */
+}
+
+button {
+    background: #e9f1f3;
+    color: rgb(100, 100, 100);
+    font-size: 18px;
+    font-weight: 600;
+    width: 100px;
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+/* Button hover */
+button:hover {
+    background: #000000;
+    color: white;
+    transform: scale(1.08);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Button click effect */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Tablet */
+
+@media (max-width:768px) {
+
+    .score-board {
+        padding: 40px 0;
+    }
+
+    .score-board-content {
+        padding: 30px;
+    }
+
+    .score-board-content h3 {
+        font-size: 26px;
+    }
+
+    .score {
+        font-size: 26px;
+    }
+
+    .overs {
+        font-size: 22px;
+    }
+
+    button {
+        width: 90px;
+        font-size: 16px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width:480px) {
+
+    .score-board-content {
+        padding: 20px;
+    }
+
+    .score-board-content h3 {
+        font-size: 22px;
+    }
+
+    .score {
+        font-size: 24px;
+    }
+
+    .overs {
+        font-size: 20px;
+    }
+
+    /* .buttons {
+        flex-direction: column;
+        align-items: center;
+    } */
+
+    button {
+        width: 40%;
+        max-width: 250px;
+    }
+}

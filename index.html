@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/socre-board.css">
+    <title>Score-Board</title>
+</head>
+<body>
+   
+    <div class="score-board">
+        <div class="container">
+            <div class="score-board-content">
+                
+                <div class="board">
+                    <h3 id="teamName">India VS New Zealand</h3>
+
+                    <div class="score">
+                        <span id="runs">00</span> /
+                        <span id="wickets">0</span>
+                    </div>
+
+                    <div class="overs">
+                        Overs: <span id="overs">0.0</span>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button onclick="addRuns(0)">dot</button>
+                    <button onclick="addRuns(1)">+1</button>
+                    <button onclick="addRuns(2)">+2</button>
+                    <button onclick="addRuns(4)">+4</button>
+                    <button onclick="addRuns(6)">+6</button>
+                    <button onclick="addWicket()">Wicket</button>
+                    <button onclick="undo()">Undo</button>
+                    <button onclick="resetMatch()">Clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/score-board.js"></script>
+</body>
+</html>
+
+
